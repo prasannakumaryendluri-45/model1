@@ -1,0 +1,73 @@
+
+/* Reset some styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+/* Hover effect for menu items */
+.navbar ul li a:hover {
+    color: #ff6347; /* Tomato color on hover */
+}
+
+/* Navbar style change when scrolled */
+.navbar.scrolled {
+    background-color: #222;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Styling */
+.content {
+    margin-top: 80px; /* Ensure the content isn't hidden behind the fixed navbar */
+    padding: 20px;
+    height: 2000px; /* Just for demo to create scrollable content */
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+}
